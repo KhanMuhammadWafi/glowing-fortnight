@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saeef Computer</title>
+    
+    
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+  background-color: #0056b3;
+}
+
+header .contact-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 1rem;
+}
+
+header .contact-btn:hover {
+  background-color: #45a049;
+}
+
+.hero-section {
+  background-color: #e9ecef;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.services-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.services-section .service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.services-section .service-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.services-section .service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #343a40;
+}
+
+.services-section .service-card p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.about-us-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.about-us-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.about-us-section p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+.contact-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-section form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-section form textarea {
+  resize: none;
+}
+
+.contact-section form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section form button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav a {
+    margin: 0.5rem 0;
+  }
+
+  .hero-section h2 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .services-section .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">Saeef Computer</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="contact-btn">Contact Us</button>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <h2>Welcome to Saeef Computer</h2>
+            <p>
+                We specialize in providing top-notch visa application assistance for
+                various countries.
+            </p>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Visa Application Assistance</h3>
+                    <p>
+                        We offer expert guidance and support throughout the visa application
+                        process for:
+                    </p>
+                    <ul>
+                        <li>India</li>
+                        <li>USA</li>
+                        <li>Thailand</li>
+                        <li>Japan</li>
+                        <li>And more...</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-us-section">
+            <h2>About Us</h2>
+            <p>
+                Saeef Computer is a leading service provider dedicated to delivering
+                reliable and efficient visa application assistance. With years of
+                experience, we pride ourselves on our commitment to customer
+                satisfaction. We are located in <strong>59, Purana Paltan, Dhaka</strong>.
+            </p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>
+                Get in touch with us for any inquiries or to request our services. We
+                are here to help!
+            </p>
+            <p>
+                <strong>Phone:</strong> 01719386749
+                <strong>Email:</strong> jahangir8155@gmail.com
+            </p>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    rows="4"
+                    required
+                ></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Saeef Computer. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
